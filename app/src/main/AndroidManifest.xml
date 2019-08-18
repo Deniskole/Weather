@@ -20,9 +20,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".ui.screen.SearchActivity"
-            android:configChanges="orientation"></activity>
-        <activity android:name=".ui.screen.ForecastActivity">
+        <activity
+            android:name=".ui.screen.SearchActivity"
+            android:configChanges="orientation|screenSize"></activity>
+        <activity
+            android:name=".ui.screen.ForecastActivity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
